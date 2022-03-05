@@ -3,6 +3,11 @@ class Photon{
       this.pos = createVector(x, y);
       this.vel = createVector(-c, 0);
       this.history = [];
+      this.stopped = false;
+   }
+   
+   atop() {
+     this.stopped = true;
    }
    
    update(){

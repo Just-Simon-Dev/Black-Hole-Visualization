@@ -13,13 +13,16 @@ class BlackHole{
      
      photon.vel.add(force);
      photon.vel.setMag(c);
+     
+     if(r < this.er){
+        photon.stop(); 
+     }
   }
   
   show() {
     fill(0);
     noStroke();
     circle(this.pos.x, this.pos.y, this.rs);
-    console.log(this.rs);
     
     noFill();
     stroke(100, 100 );
