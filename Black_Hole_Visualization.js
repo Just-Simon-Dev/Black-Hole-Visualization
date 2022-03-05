@@ -22,6 +22,8 @@ function draw() {
   background(255);
   blackhole.show();
   for(let obj of objects){
+    const force = blackhole.pull(obj);
+    
     obj.update();
     obj.show();
   }
