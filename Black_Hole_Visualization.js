@@ -7,7 +7,7 @@ let blackhole;
 const objects = [];
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   ellipseMode(RADIUS);
   blackhole = new BlackHole(100, 320, 3000);
   
