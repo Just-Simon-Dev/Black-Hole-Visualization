@@ -12,7 +12,7 @@ class BlackHole{
      force.setMag(fg);
      
      photon.vel.add(force);
-     photon.vel.limit(c);
+     photon.vel.setMag(c);
   }
   
   show() {
