@@ -1,25 +1,25 @@
-class Photon{
-   constructor(x, y){
+class SpaceObject{
+   constructor(x, y, type, m){
       this.pos = createVector(x, y);
       this.vel = createVector(-c, 0);
+      this.m = m;
       this.history = [];
       this.stopped = false;
+      this.type = type;
    }
    
-   atop() {
+   stop() {
      this.stopped = true;
    }
-   
    update(){
-     this.history.push(this.pos.copy());
-      const deltaV = this.vel.copy();
-      deltaV.mult(dt);
-      this.pos.add(deltaV); 
-      if(this.history.length > 100){
+       this.history.push(this.pos.copy());
+        const deltaV = this.vel.copy();
+        deltaV.mult(dt);
+        this.pos.add(deltaV); 
+      if(this.history.length > 500){
          this.history.splice(0,1); 
-      }
+     }
    }
-   
    show() {
      strokeWeight(2);
      stroke(255, 0, 0);
