@@ -12,7 +12,11 @@ class BlackHole{
      force.setMag(fg);
      
      obj.vel.add(force);
-     obj.vel.limit(c);
+     if(obj.type == "Photon"){
+	obj.vel.setMag(c);
+     }else{
+	obj.vel.limit(c);
+     }
      if(r < this.rs){
         obj.stop(); 
      }
