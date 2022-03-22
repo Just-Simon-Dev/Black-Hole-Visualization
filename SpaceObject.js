@@ -1,7 +1,7 @@
 class SpaceObject{
-   constructor(x, y, type, m){
+   constructor(x, y, type, m, v){
       this.pos = createVector(x, y);
-      this.vel = createVector(-c, 0);
+      this.vel = createVector(-v, 0);
       this.m = m;
       this.history = [];
       this.stopped = false;
@@ -15,7 +15,7 @@ class SpaceObject{
        this.history.push(this.pos.copy());
         const deltaV = this.vel.copy();
         deltaV.mult(dt);
-        this.pos.add(deltaV); 
+        this.pos.add(deltaV);
       if(this.history.length > 500){
          this.history.splice(0,1); 
      }
