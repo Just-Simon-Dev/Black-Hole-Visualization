@@ -19,7 +19,12 @@
   <div class="menu">
 
 <br>
-
+    Wybierz rodzaj obiektu <select name="type" id="type">
+      <option value="Planet">planeta</option>
+      <option value="Photon">foton</option>
+      <option value="Star">Gwiazda</option>
+    </select>
+    <br>
     <!-- Liczba PLANET (+) i (-)
     -->
     Liczba obiektów:
@@ -41,32 +46,15 @@
     <br>
 
     Wpisz masę czarnej dziury: <input id="Mass" type="number">
-    <script>
-        function blackHoleMass () {
-            var mass = document.getElementById('Mass');
-            window.location.reload();
-        }
-    </script>
+    <br>
+
+    Wpisz masę obiektów: <input id="ObjectMass" type="number">
+    <br>
+
+    Wpisz prędkość obiektów: <input id="ObjectVel" type="number" max=299792458>
+
+    <br>
     
-    <br>
-
-    Wpisz masę planet: <input id="planetMass" type="number">
-    <script>
-        function planetMass () {
-            var mass = document.getElementById('planetMass');
-        }
-    </script>
-
-    <br>
-
-    Wpisz prędkość planet: <input id="planetVel" type="number" max=299792458>
-    <script>
-        function planetVelocity () {
-            var mass = document.getElementById('planetVel');
-        }
-    </script>
-
-    <br>
 </div>
 </body>
 </html>
