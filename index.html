@@ -2,7 +2,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="style.css">
   <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
   <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
   <script language="javascript" type="text/javascript" src="BlackHole.js"></script>
@@ -16,5 +16,57 @@
 </head>
 
 <body>
+  <div class="menu">
+
+<br>
+
+    <!-- Liczba PLANET (+) i (-)
+    -->
+    Liczba obiektów:
+    <input id="ObjectNumber" type="number" min=0 max=100>
+
+    <button onclick="increment()">+</button>
+    <button onclick="decrement()">-</button>
+    <script>
+        function increment() {
+            var objectnumber = document.getElementById('ObjectNumber').stepUp();
+            window.location.reload();
+        }
+        function decrement() {
+            var objectnumber =  document.getElementById('ObjectNumber').stepDown();
+            window.location.reload();
+        }
+    </script>
+
+    <br>
+
+    Wpisz masę czarnej dziury: <input id="Mass" type="number">
+    <script>
+        function blackHoleMass () {
+            var mass = document.getElementById('Mass');
+            window.location.reload();
+        }
+    </script>
+    
+    <br>
+
+    Wpisz masę planet: <input id="planetMass" type="number">
+    <script>
+        function planetMass () {
+            var mass = document.getElementById('planetMass');
+        }
+    </script>
+
+    <br>
+
+    Wpisz prędkość planet: <input id="planetVel" type="number" max=299792458>
+    <script>
+        function planetVelocity () {
+            var mass = document.getElementById('planetVel');
+        }
+    </script>
+
+    <br>
+</div>
 </body>
 </html>

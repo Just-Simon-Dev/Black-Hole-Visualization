@@ -1,0 +1,23 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif ;
+    overflow: hidden;
+}
+.menu {
+    padding: 10px;
+    border: 10px solid #65B891;
+    background-color: #93E5AB;
+    text-align: center;
+}
+
+input {
+    list-style-type: none;
+    border: 3px solid #4E878C;
+}
+button {
+    color: white;
+    background-color: #93E5AB;
+    border: 3px solid #4E878C;
+    font-size: small;
+    font-weight: bold;
+    width: 40px;
+}
