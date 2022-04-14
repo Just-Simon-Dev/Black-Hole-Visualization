@@ -5,7 +5,7 @@ interface to manipulating objects in simulation.
 link to video: https://www.youtube.com/watch?v=Iaz9TqYWUmA
 
 # How open this project
-To open this project you have to unpacked zip from github and simply double-click index.html.
+To check result of our work click this link -> https://black-hole-visualisation.glitch.me/
 
 # Authors
 Szymon S.
