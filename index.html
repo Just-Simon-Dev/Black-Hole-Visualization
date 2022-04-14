@@ -10,51 +10,29 @@
   <script language="javascript" type="text/javascript" src="Black_Hole_Visualization.js"></script>
   <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 
-  <!-- This line removes any default padding and style.
-       You might only need one of these values set. -->
-  <style> body { padding: 0; margin: 0; } </style>
 </head>
 
 <body>
+  <div class="title"><a href="https://github.com/Just-Simon-Dev/Black-Hole-Visualization" target="_blank">Black-Hole-Visualization</a><div class="version">1.0.0</div></div>
   <div class="menu">
-
-<br>
-    Wybierz rodzaj obiektu <select name="type" id="type">
-      <option value="Planet">planeta</option>
-      <option value="Photon">foton</option>
-      <option value="Star">Gwiazda</option>
-    </select>
-    <br>
-    <!-- Liczba PLANET (+) i (-)
-    -->
-    Liczba obiektów:
-    <input id="ObjectNumber" type="number" min=0 max=100>
-
-    <button onclick="increment()">+</button>
-    <button onclick="decrement()">-</button>
-    <script>
-        function increment() {
-            var objectnumber = document.getElementById('ObjectNumber').stepUp();
-            window.location.reload();
-        }
-        function decrement() {
-            var objectnumber =  document.getElementById('ObjectNumber').stepDown();
-            window.location.reload();
-        }
-    </script>
-
-    <br>
-
-    Wpisz masę czarnej dziury: <input id="Mass" type="number">
-    <br>
-
-    Wpisz masę obiektów: <input id="ObjectMass" type="number">
-    <br>
-
-    Wpisz prędkość obiektów: <input id="ObjectVel" type="number" max=299792458>
-
-    <br>
-    
+    <div class="element">
+      rodzaj obiektu <select name="type" id="type">
+        <option value="Planet">planeta</option>
+        <option value="Photon">foton</option>
+        <option value="Star">Gwiazda</option>
+      </select>
+    </div>
+    <div class="element">
+      Liczba obiektów:
+    </div>
+      <div class="element number">
+        <div class="decrement">-</div
+        ><div class="output"><input type="number" id="ObjectNumber" value="100"></div
+        ><div class="increment">+</div>
+     </div>
+    <div class="element">masa czarnej dziury: <input id="Mass" type="number" value="1500"></div>
+    <div class="element">masa obiektów: <input id="ObjectMass" type="number" value="3"></div>
+    <div class="element">prędkość obiektów: <input id="ObjectVel" type="number" value="99930819"></div>
 </div>
 </body>
 </html>

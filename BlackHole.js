@@ -27,7 +27,7 @@ class BlackHole{
     
     fill(0);
     noStroke();
-    image(this.img, this.pos.x, this.pos.y, this.rs*2, this.rs*2);
+    image(this.img, this.pos.x - this.rs*1.25, this.pos.y - this.rs, this.rs*2.5, this.rs*2);
     
     noFill();
     stroke(100, 100 );
