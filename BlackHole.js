@@ -1,8 +1,9 @@
 class BlackHole{
-  constructor(x, y, m){
+  constructor(x, y, m, img){
      this.pos = createVector(x,y);
      this.mass = m;
      this.rs = (2 * G * this.mass) / (c*c);
+     this.img = img;
   }
   
   pull(obj){
@@ -23,9 +24,10 @@ class BlackHole{
   }
   
   show() {
+    
     fill(0);
     noStroke();
-    circle(this.pos.x, this.pos.y, this.rs);
+    image(this.img, this.pos.x, this.pos.y, this.rs*2, this.rs*2);
     
     noFill();
     stroke(100, 100 );
